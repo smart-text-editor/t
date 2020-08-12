@@ -1,0 +1,26 @@
+{
+  "name": "Smart Text Editor",
+  "short_name": "Smart Text Editor",
+  "start_url": "https://offroaders123.github.io/Smart-Text-Editor/",
+  "display": "standalone",
+  "theme_color": "#191919",
+  "background_color": "#1d1d1d",
+  "icons": [
+    {
+      "src": "resources/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "resources/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "resources/icon-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}
