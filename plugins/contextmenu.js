@@ -3,7 +3,7 @@ styles.innerHTML = decodeURI(":root%20%7B%0A%20%20--container-dark:%20#171717;%0
 document.head.appendChild(styles);
 document.body.innerHTML += decodeURI("%3Cdiv%20class=%22ctxMenu%22%3E%0A%3Cdiv%20onmousedown=%22copy();%22%20id=%22copy%22%3ECopy%3Cspan%3ECtrl+C%3C/span%3E%3C/div%3E%0A%3Cdiv%20onmousedown=%22paste();%22%20id=%22paste%22%3EPaste%3Cspan%3ECtrl+V%3C/span%3E%3C/div%3E%0A%3Cdiv%20onmousedown=%22cut();%22%20id=%22cut%22%3ECut%3Cspan%3ECtrl+X%3C/span%3E%3C/div%3E%0A%3C/div%3E");
 var ctx = document.querySelector(".ctxMenu"),ctxStyle = ctx.style,previous = document.activeElement;
-oncontextmenu = function(e){
+document.querySelectorAll("textarea").oncontextmenu = function(e){
   previous = document.activeElement;
   var w = window.innerWidth,
       h = window.innerHeight,
